@@ -1,0 +1,17 @@
+
+  body.appear-from-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: appear-from-left 1.5s ease-out forwards;
+  }
+  
+  @keyframes appear-from-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }

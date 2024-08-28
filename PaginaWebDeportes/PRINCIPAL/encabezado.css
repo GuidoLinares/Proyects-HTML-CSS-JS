@@ -1,0 +1,46 @@
+p.appear-from-left {
+    font-family: 'Open Sans', sans-serif; /* fuente */
+    font-size: 1.3rem; /* tamaño de fuente */
+    color: #ffffff; /* color de texto oscuro */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4); /* efecto de sombra */
+  }
+  
+  /* ajustes de estilo para un fondo gris */
+  body {
+    background-color: #ddd; /* color de fondo gris */
+  }
+  
+  /* ajustes de estilo para un texto oscuro */
+  p.appear-from-left {
+    color: #ffffff99; /* color de texto oscuro */
+  }
+  
+
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #333;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  

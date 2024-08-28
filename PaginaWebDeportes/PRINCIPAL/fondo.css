@@ -1,0 +1,40 @@
+/* fondo negro difuminado */
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.cmdsport.com/app/uploads/2022/05/todo-necesitas-saber-crear-club-deportivo-480x270.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+  /* cierre enlace */
+  
+ul {
+
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.2;
+ 
+}
+
+a {
+  margin-right: 10px;
+  display: block;
+  text-decoration: none;
+  padding: 10px; /* espacio interno alrededor de cada enlace */
+  margin: 0 5px; /* espacio entre los elementos de enlace */
+  border-radius: 5px;
+  color: whitesmoke;
+
+}
+
+nav.no-style :hover {
+  background-color: #aaa; /* color de fondo gris oscuro cuando se pasa el mouse sobre los enlaces */
+  color: #726d6d;
+}
+ 
